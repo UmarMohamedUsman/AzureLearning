@@ -65,6 +65,12 @@ PS C:\Windows\system32>
 
 To check is Azure PowerShell if Azure PowerShell is installed correctly.
 
+In Windows Explorer
+```
+C:\Program Files\WindowsPowerShell\Modules
+```
+In PowerShell
+
 ```
 
 PS C:\Windows\system32> Get-Module -ListAvailable Azure*
