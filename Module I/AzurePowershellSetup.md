@@ -119,6 +119,6 @@ Manifest   1.1.1      AzureRM.Websites
 
 ```
 
-#### Tip
+#### Tips
 * Installed AzureRM version is same as Azure PowerShell version.(In this case : 1.5.0)
 * To check latest Released PowerShell Command : [Click Here](https://github.com/Azure/azure-powershell/blob/dev/ChangeLog.md)
