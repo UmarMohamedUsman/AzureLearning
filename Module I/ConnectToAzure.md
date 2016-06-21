@@ -37,7 +37,7 @@ SubscriptionId        : 6b6a59a6-e367-4913-bea7-34b6862095bf
 SubscriptionName      : Microsoft Azure Internal Consumption
 CurrentStorageAccount :
 ```
-Hint : [How to create a StorageAccount using PowerShell]()
+Hint : [How to create a StorageAccount using PowerShell](https://github.com/abhishekanand/AzureLearning/blob/master/Module%20I/CreateStorageAccount.md)
 
 ```
 # To select the default storage context for your current session
