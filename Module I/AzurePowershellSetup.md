@@ -1,6 +1,6 @@
 How to install and configure Azure PowerShell:-
 
-[ Microsoft Official Article ]( [https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
+[ Microsoft Official Article](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
 
 My Version  :
 -------------------

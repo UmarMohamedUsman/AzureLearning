@@ -1,6 +1,6 @@
 # Connecting to Azure using Azure PowerShell
 
-[ Microsoft Official Article ]( [https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
+[ Microsoft Official Article ](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/)
 
 To login to your AzureRM SubscriptionName
 ```
