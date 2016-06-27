@@ -15,7 +15,7 @@ Login-AzureRmAccount
 #To create a new resource group, provide a name and location for your resource group.
 New-AzureRmResourceGroup -Name MyFirstStorageRG -Location "West US"
 ```
-#### Verify existence of the Storage Account
+#### Verify existence of ResourceGruop
 ```
 # Verify Existence of ResourceGruop
 Get-AzureRmResourceGroup -Name MyFirstStorageRG
