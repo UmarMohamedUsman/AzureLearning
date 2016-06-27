@@ -77,6 +77,7 @@ Get-AzureRmVMImageOffer -Location "East US" -PublisherName "Canonical"
 # List all the possible SKU for an offer
 Get-AzureRmVMImageSku -Location "East US" -PublisherName "Canonical" -Offer "UbuntuServer"
 ```
+
 |Skus   |           Offer   |     PublisherName |Location |Id                                                                                                  
 | ----            |   -----       |  ------------- | -------- | --  |
 |16.04.0-DAILY-LTS | UbuntuServer | Canonical   |   eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/eastus/...|
@@ -88,12 +89,11 @@ Get-AzureRmVMImageSku -Location "East US" -PublisherName "Canonical" -Offer "Ubu
 Get-AzureRmVMImage -Location "East US" -PublisherName "Canonical" -Offer "UbuntuServer" -Skus "16.04.0-LTS"
 ```
 
-
 | Version    |      FilterExpression | Skus      |   Offer   |      PublisherName|  Location|  Id  |                                                                      
-|-------      |    ---------------- | ----    |     -----   |      ------------- | --------  | --    |                                                                    
-| 16.04.201604203     | |              16.04.0-LTS | UbuntuServer | Canonical|      eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof...|
- |16.04.201605161       | |              16.04.0-LTS | UbuntuServer | Canonical|      eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof...|
- |16.04.201606100           | |              16.04.0-LTS | UbuntuServer | Canonical|      eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof...|
+| :-------      |    ----------------  | ----       |     ----- |      -------------| --------  | ---- |                                                                    
+|16.04.201604203     |   |              16.04.0-LTS | UbuntuServer | Canonical |      eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof...|
+|16.04.201605161       |    |              16.04.0-LTS | UbuntuServer | Canonical |      eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof...|
+|16.04.201606100           |   |              16.04.0-LTS | UbuntuServer | Canonical |      eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsof...|
 
 
 NOTE : Version :16.04.201606100  [16.04 - Ubuntu Verison | 201606100 - First 8 digit signifies Published Date for the image  in this case 2016-06-10 (YYYY-MM-DD) ]
