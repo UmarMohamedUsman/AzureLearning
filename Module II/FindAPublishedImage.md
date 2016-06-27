@@ -78,7 +78,7 @@ Get-AzureRmVMImageOffer -Location "East US" -PublisherName "Canonical"
 Get-AzureRmVMImageSku -Location "East US" -PublisherName "Canonical" -Offer "UbuntuServer"
 ```
 
-|Skus   |           Offer   |     PublisherName |Location |Id                                                                                                  
+|Skus   |           Offer   |     PublisherName |Location |Id |
 | ----            |   -----       |  ------------- | -------- | --  |
 |16.04.0-DAILY-LTS | UbuntuServer | Canonical   |   eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/eastus/...|
 |16.04.0-LTS      |  UbuntuServer|  Canonical |     eastus |   /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/eastus/...|
