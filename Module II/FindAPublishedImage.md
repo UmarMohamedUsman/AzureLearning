@@ -8,6 +8,7 @@ To find published image on Azure. Customer needs to go through few steps
 5. Each sku has multiple version  - Each version correspond to one image.
 
 
+#### List All the Datacenter that Subscription has access too.
 ```
 # List All the Datacenter that Subscription has access too.
 Get-AzureRmLocation | select Location, DisplayName
@@ -38,7 +39,7 @@ Get-AzureRmLocation | select Location, DisplayName
 |canadaeast        | Canada East        |
 
 
-
+#### List All the Publisher in the given region that Subscription has access too.
 ```
 # List All the Publisher in the given region that Subscription has access too.
 Get-AzureRmVMImagePublisher -Location "East US" |select PublisherName
@@ -58,7 +59,7 @@ zementis
 zend                                                
 zoomdata  
 
-
+#### List all the offers from the publisher
 ```
 # List all the offers from the publisher
 Get-AzureRmVMImageOffer -Location "East US" -PublisherName "Canonical"
@@ -73,6 +74,7 @@ Get-AzureRmVMImageOffer -Location "East US" -PublisherName "Canonical"
 |Ubuntu_Snappy_Core     |   Canonical  |   eastus |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/eastus/Publi...|
 |Ubuntu_Snappy_Core_Docker |Canonical   |  eastus |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/eastus/Publi...|
 
+#### List all the possible SKU for an offer
 ```
 # List all the possible SKU for an offer
 Get-AzureRmVMImageSku -Location "East US" -PublisherName "Canonical" -Offer "UbuntuServer"
@@ -84,8 +86,9 @@ Get-AzureRmVMImageSku -Location "East US" -PublisherName "Canonical" -Offer "Ubu
 |16.04.0-LTS      |  UbuntuServer|  Canonical |     eastus |   /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/eastus/...|
 |16.10-DAILY      |  UbuntuServer | Canonical    |  eastus  |  /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/eastus/...|
 
+#### List all the Images offered under selected SKU
 ```
-# List all the Images offered under seelcted SKU
+# List all the Images offered under selected SKU
 Get-AzureRmVMImage -Location "East US" -PublisherName "Canonical" -Offer "UbuntuServer" -Skus "16.04.0-LTS"
 ```
 
@@ -97,3 +100,27 @@ Get-AzureRmVMImage -Location "East US" -PublisherName "Canonical" -Offer "Ubuntu
 
 
 NOTE : Version :16.04.201606100  [16.04 - Ubuntu Verison | 201606100 - First 8 digit signifies Published Date for the image  in this case 2016-06-10 (YYYY-MM-DD) ]
+
+#### To select your desired image for deployment
+```
+# To select your desired image for deployment
+Get-AzureRmVMImage -Location "West US" -PublisherName "Canonical" -Offer "UbuntuServer" -Skus "16.04.0-LTS" -Version "16.04.201604203"
+
+Output :
+
+Id               : /Subscriptions/6b6a59a6-e367-4913-bea7-34b6862095bf/Providers/Microsoft.Compute/Locations/w
+                   estus/Publishers/Canonical/ArtifactTypes/VMImage/Offers/UbuntuServer/Skus/16.04.0-LTS/Versi
+                   ons/16.04.201604203
+Location         : westus
+PublisherName    : Canonical
+Offer            : UbuntuServer
+Skus             : 16.04.0-LTS
+Version          : 16.04.201604203
+FilterExpression :
+Name             : 16.04.201604203
+OSDiskImage      : {
+                     "operatingSystem": "Linux"
+                   }
+PurchasePlan     : null
+DataDiskImages   : []
+```

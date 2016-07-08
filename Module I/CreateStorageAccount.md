@@ -20,8 +20,17 @@ New-AzureRmResourceGroup -Name MyFirstStorageRG -Location "West US"
 # Verify Existence of ResourceGruop
 Get-AzureRmResourceGroup -Name MyFirstStorageRG
 ```
+#### To Check Availibilty of Storage Account Name
+```
+#To Check Availibilty of Storage Account Name
+Get-AzureRmStorageAccountNameAvailability mystorageaccountft
+```
 #### Create a New StorageAccount
 Note : Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
+
+SkuName Details : [click Here](https://msdn.microsoft.com/en-us/library/azure/mt712701.aspx)
+
+Kind : Indicates the type of storage account. For now, this must be set to 'Storage' (which supports Blob, Table, Queue, and File data) or 'BlobStorage' (which supports Blob data only).
 ```
 # Create a new stroage Account
 New-AzureRmStorageAccount -ResourceGroupName "MyFirstStorageRG" -Name "mystorageaccountft" -Location "West US" -SkuName "Standard_GRS" -Kind "Storage" -Verbose
