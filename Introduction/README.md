@@ -66,6 +66,10 @@ Lesson 4 : Replicate VMware virtual machines and physical machines to Azure with
 
 Lesson 5 : Replicate Hyper-V virtual machines in VMM clouds to Azure using Azure Site Recovery with the Azure portal
 
+# Module VII Azure Backup
 
+Lesson 1: Back up a Windows Server or client to Azure with Azure Backup using the Resource Manager deployment model
+
+Lesson 2: Back up Azure virtual machines
 
 APPENDIX
