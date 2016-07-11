@@ -41,6 +41,8 @@ Lesson 3 : Create Site to site connection (On-premises to Azure )
 
 Lesson 4 : Connect two Virtual Network (Azure to Azure)
 
+#### * Other Scenarios
+
 Lesson 5 : Intro to Express Route and Best Practices
 
 # Module IV (Identity & Access Management)
