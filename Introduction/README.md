@@ -59,9 +59,10 @@ Lesson 2 : Replicate physical machines to Azure with Azure Site Recovery using t
 
 Lesson 3 : Replicate Hyper-V virtual machines (without VMM) to Azure using Azure Site Recovery with the Azure portal
 
-Lesson 4 : Replicate VMware virtual machines and physical machines to Azure with Azure Site Recovery using the Azure portal
 
 #### * Other Scenarios
+
+Lesson 4 : Replicate VMware virtual machines and physical machines to Azure with Azure Site Recovery using the Azure portal
 
 Lesson 5 : Replicate Hyper-V virtual machines in VMM clouds to Azure using Azure Site Recovery with the Azure portal
 
