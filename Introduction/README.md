@@ -49,15 +49,22 @@ Lesson 1 :
 
 Lesson 2: RBAC
 
-# Module V (Lightweight Architectural Assessment )
+# Module V (Lightweight Architectural Assessment)
 
-# Module VI (Azure Site Recovery )
+# Module VI (Azure Site Recovery - ASR)
 
 Lesson 1 : Prep your Subscription for ASR
 
-Lesson 2 : Replicate Hyper-V virtual machines in VMM clouds to Azure (ARM)
+Lesson 2 : Replicate physical machines to Azure with Azure Site Recovery using the Azure portal
 
-Lesson 3 :Replicate VMware virtual machines and physical machines to Azure (ARM)
+Lesson 3 : Replicate Hyper-V virtual machines (without VMM) to Azure using Azure Site Recovery with the Azure portal
+
+Lesson 4 : Replicate VMware virtual machines and physical machines to Azure with Azure Site Recovery using the Azure portal
+
+#### * Other Scenarios
+
+Lesson 5 : Replicate Hyper-V virtual machines in VMM clouds to Azure using Azure Site Recovery with the Azure portal
 
 
-APPENDXIX
+
+APPENDIX
