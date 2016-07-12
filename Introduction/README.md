@@ -23,13 +23,19 @@ Lesson 2 : [Find desired image on Azure Platform ](https://github.com/abhishekan
 
 Lesson 3 : [Crete a new VM from Gallery Image](https://github.com/abhishekanand/AzureLearning/blob/master/Module%20II/CreateVirtualMachineGI.md)
 
-Lesson 4 : Capture a windows VM as an Image
+Lesson 4 : [Capture a windows VM as an Image](https://github.com/abhishekanand/AzureLearning/blob/master/Module%20II/CaptureWindowsVMImage.md)
 
-Lesson 5 : Create a new VM from an existing Disk
+Lesson 5 : Create a new VM from a captured Image
 
 Lesson 6 : Upload a custom image
 
-Lesson 7 : Create a new VM from a custom/captured Image
+Lesson 7 : Create a new VM from a custom
+
+Lesson 8 : Create a new VM from an existing Disk/uploaded Vhd
+
+
+
+
 
 # Module III (Core Setup - Virtual Network / Express Route)
 
