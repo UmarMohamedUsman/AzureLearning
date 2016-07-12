@@ -3,8 +3,22 @@ My Azure Learning and Tutorial
 
 Original Article : [Click Here](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-capture-image/)
 
+## Prepare the VM for image capture
+* Sign in to your Windows virtual machine. In the Azure portal, navigate through Browse > Virtual machines > Your Windows virtual machine > Connect.
 
+* Open a Command Prompt window as an administrator.
 
+* Change the directory to %windir%\system32\sysprep, and then run sysprep.exe.
+
+* In the System Preparation Tool dialog box, do the following:
+
+   * ###### In System Cleanup Action, select Enter System Out-of-Box Experience (OOBE) and make sure that Generalize is checked.
+
+  * ###### In Shutdown Options, select Shutdown.
+
+* Click OK.
+
+## Capture the VM using PowerShell
 Login-AzureRmAccount
 
 #### Verify Machine exists
